@@ -9,5 +9,5 @@ add_executable(lab0
         matrix_actions.h
         matrixio.cpp
         matrixio.h
-        addition_invert.cpp
-        addition_invert.h)
+        additional_invert.cpp
+        additional_invert.h)
