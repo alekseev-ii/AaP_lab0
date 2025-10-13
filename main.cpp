@@ -21,10 +21,10 @@ int main () {
 
     matrixout(matrix, rows, cols);
 
-    transpose(matrix, rows, cols);
-    int t = rows; rows = cols; cols = t;
+    // transpose(matrix, rows, cols);
+    // int t = rows; rows = cols; cols = t;
     // oddEvenRows(matrix, rows, cols);
-    // invert(matrix, rows);
+     invert(matrix, rows);
 
     matrixout(matrix, rows, cols);
 }

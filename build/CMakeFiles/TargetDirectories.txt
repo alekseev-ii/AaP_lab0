@@ -1,0 +1,3 @@
+/home/Ivan/Documents/Projects/AaP_lab0/build/CMakeFiles/lab0.dir
+/home/Ivan/Documents/Projects/AaP_lab0/build/CMakeFiles/edit_cache.dir
+/home/Ivan/Documents/Projects/AaP_lab0/build/CMakeFiles/rebuild_cache.dir

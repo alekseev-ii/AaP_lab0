@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic -Wl,--dependency-file=CMakeFiles/lab0.dir/link.d CMakeFiles/lab0.dir/main.cpp.o CMakeFiles/lab0.dir/matrix_actions.cpp.o CMakeFiles/lab0.dir/matrixio.cpp.o CMakeFiles/lab0.dir/additional_invert.cpp.o -o lab0
