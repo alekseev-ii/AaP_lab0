@@ -1,10 +1,9 @@
 #include "additional_invert.h"
 
-#include <cstddef>
 #include <stdexcept>
 #include "matrix_actions.h"
 
-double determinant(double * matrix, const int& n) {
+double determinant(double * matrix, const size_t& n) {
     if (n == 1) {
         return matrix[0];
     } else if (n == 2) {
@@ -19,12 +18,12 @@ double determinant(double * matrix, const int& n) {
     return det;
 }
 
-double math_addition(double * matrix, const int& n, const int& i, const int& j) {
+double math_addition(double * matrix, const size_t& n, const size_t& i, const size_t& j) {
     const int k = (i + j) % 2 ? -1 : 1;
     return k * minor(matrix, n, i, j);
 }
 
-double minor(double* matrix, const int& n, const int& i, const int& j) {
+double minor(double* matrix, const size_t& n, const size_t& i, const size_t& j) {
     double temp_matrix[1000]{0.0};
     for (size_t r = 0ull; r < n - 1; ++r) {
         for (size_t c = 0ull; c < n - 1; ++c) {
@@ -36,7 +35,7 @@ double minor(double* matrix, const int& n, const int& i, const int& j) {
     return determinant(temp_matrix, n - 1);
 }
 
-void invert(double *matrix, const int& n) {
+void invert(double *matrix, const size_t& n) {
     double det = determinant(matrix, n);
     if (det == 0.0) {
         throw std::invalid_argument("the matrix determinant must be non-zero");

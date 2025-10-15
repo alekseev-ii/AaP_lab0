@@ -1,12 +1,13 @@
 #include <iostream>
+#include <cstddef>
 #include "matrixio.h"
 #include "matrix_actions.h"
 #include "additional_invert.h"
 
 
 int main () {
-    int rows = 0;
-    int cols = 0;
+    size_t rows = 0;
+    size_t cols = 0;
     std::cin >> rows >> cols;
     if (std::cin.fail()) {
         return 1;

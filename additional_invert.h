@@ -1,9 +1,11 @@
 #ifndef ADDITIONAL_INVERT_H
 #define ADDITIONAL_INVERT_H
 
-double determinant(double* matrix, const int& n);
-double math_addition(double* matrix, const int& n, const int& i, const int& j);
-double minor(double* matrix, const int& n, const int& i, const int& j);
-void invert(double* matrix, const int& n);
+#include <cstddef>
+
+double determinant(double* matrix, const size_t& n);
+double math_addition(double* matrix, const size_t& n, const size_t& i, const size_t& j);
+double minor(double* matrix, const size_t& n, const size_t& i, const size_t& j);
+void invert(double* matrix, const size_t& n);
 
 #endif //ADDITIONAL_INVERT_H
